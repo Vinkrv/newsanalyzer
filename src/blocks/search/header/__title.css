@@ -1,0 +1,28 @@
+.header__title {
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: 'Roboto Slab', Arial, sans-serif;
+    text-decoration: none;
+    margin: 30px auto 26px 104px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .header__title {
+        margin: 22px auto 18px 40px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .header__title {
+        font-size: 16px;
+        margin: 16px auto 16px 16px;
+    }
+}
+
+
+
+
