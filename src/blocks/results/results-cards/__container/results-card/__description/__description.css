@@ -1,0 +1,8 @@
+@import url("./__date.css");
+@import url("./__title.css");
+@import url("./__text.css");
+@import url("./__source.css");
+
+.results-card__description {
+    margin: 20px 24px 24px;
+}

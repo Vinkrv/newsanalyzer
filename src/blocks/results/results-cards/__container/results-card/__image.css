@@ -1,0 +1,9 @@
+.results-card__image {
+    background-image: url('../../../../../images/test.png');
+    height: 272px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+}

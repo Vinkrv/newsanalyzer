@@ -1,0 +1,16 @@
+@import url("./results-card/results-card.css");
+
+.results-cards__container {
+    margin: 64px auto 80px;
+    max-width: 1232px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 16px 16px;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1441px) {
+    .results-cards__container {
+        margin: 64px 104px 80px;
+    }
+}

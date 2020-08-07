@@ -1,0 +1,27 @@
+.results-cards__button {
+    width: 288px;
+    height: 64px;
+    border: 0;
+    border-radius: 50px 50px 50px 50px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    background-color: #fff;
+    color:#1A1B22;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: 0.4s;
+    outline: none;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.results-cards__button:hover {
+    background-color: #E8EAEB;
+}
+
+.results-cards__button:active {
+    background-color: #B6BCBF;
+}

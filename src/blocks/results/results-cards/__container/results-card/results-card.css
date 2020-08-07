@@ -1,0 +1,11 @@
+@import url("./__image.css");
+@import url("./__description/__description.css");
+
+.results-card {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    max-height: 576px;
+    cursor: pointer;
+}

@@ -1,0 +1,7 @@
+@import url("./__title.css");
+@import url("./__subtitle.css");
+@import url("./__image.css");
+
+.results-negative {
+    display: none;
+}

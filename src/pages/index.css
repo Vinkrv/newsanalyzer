@@ -14,6 +14,7 @@
 @import url(./page.css);
 @import url(../vendor/fonts.css);
 @import url(../blocks/search/search.css);
+@import url(../blocks/results/results.css);
 
 body {
   background-color: #fff;

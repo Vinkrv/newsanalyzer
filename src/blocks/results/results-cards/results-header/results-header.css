@@ -1,0 +1,12 @@
+@import url("./__title.css");
+@import url("./__ref.css");
+
+.results-header {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1232px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}

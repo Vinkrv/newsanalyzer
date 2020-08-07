@@ -11,6 +11,8 @@
     box-sizing: border-box;
     position: absolute;
     padding-left: 24px;
+    outline: none;
+    caret-color: #2F71E5;
 }
 
 @media screen and (max-width: 768px) {

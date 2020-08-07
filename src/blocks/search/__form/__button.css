@@ -12,6 +12,17 @@
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     position: absolute;
     right: 0px;
+    cursor: pointer;
+    transition: 0.4s;
+    outline: none;
+}
+
+.search__button:hover {
+    background-color: #347EFF;
+}
+
+.search__button:active {
+    background-color: #2A65CC;
 }
 
 @media screen and (max-width: 768px) {
