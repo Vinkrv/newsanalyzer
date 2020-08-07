@@ -1,0 +1,29 @@
+.search__form-input {
+    width: 490px;
+    height: 64px;
+    border: 1px solid #B6BCBF;
+    border-radius: 50px 0 0 50px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    position: absolute;
+    padding-left: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    .search__form-input {
+        width: 342px;
+        height: 56px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .search__form-input {
+        width: 288px;
+        height: 56px;
+        border-radius: 50px;
+    }
+}
