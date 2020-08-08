@@ -16,3 +16,9 @@
 .results-header__ref_active{
     opacity: 0.6;
 }
+
+@media screen and (max-width: 643px) {
+  .results-header__ref  {
+    margin-top: 16.26px;
+  }
+}

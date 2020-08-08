@@ -1,9 +1,33 @@
 .results-card__image {
     background-image: url('../../../../../images/test.png');
-    height: 272px;
+    height: 18.88vw;
+    width: 27.77vw;
+    max-width: 400px;
+    max-height: 272px;
     background-size: cover;
     background-position: center;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .results-card__image  {
+    height: 19.53vw;
+    width: 29.16vw;
+  }
+}
+
+@media screen and (max-width: 643px) {
+  .results-card__image  {
+    height: 43.34vw;
+    width: 62.21vw;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .results-card__image  {
+    height: 196px;
+    width: 288px;
+  }
 }
