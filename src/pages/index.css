@@ -16,6 +16,7 @@
 @import url(../blocks/search/search.css);
 @import url(../blocks/results/results.css);
 @import url(../blocks/author/author.css);
+@import url(../blocks/footer/footer.css);
 
 body {
   background-color: #fff;
