@@ -1,0 +1,27 @@
+@import url("./__title.css");
+@import url("./__icon.css");
+@import url("./__icons.css");
+
+.tech__container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 7.22vw;
+  margin-right: 15vw;
+  max-width: 1120px;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 864px) {
+  .tech__container {
+    flex-direction: column;
+    margin-left: 5.21vw;
+    margin-right: 7.29vw;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .tech__container {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}

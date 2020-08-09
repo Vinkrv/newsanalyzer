@@ -1,0 +1,34 @@
+@import url("./__description/__description.css");
+
+.author {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px auto;
+  max-width: 1120px;
+}
+
+@media screen and (max-width: 1439px) {
+  .author {
+    margin-left: 7.22%;
+    margin-right: 7.22%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .author {
+    margin: 40px 40px 48px;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .author {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .author {
+    margin: 32px 16px;
+  }
+}

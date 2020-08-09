@@ -1,0 +1,20 @@
+.tech__icons {
+  display: flex;
+  width: 41.52vw;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 864px) {
+  .tech__icons {
+    width: 87.5vw;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .tech__icons {
+    flex-wrap: wrap;
+    width: 275px;
+    height: 339px;
+    align-self: center;
+  }
+}

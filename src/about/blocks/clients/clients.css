@@ -1,0 +1,26 @@
+@import url("./__title.css");
+@import url("./__text.css");
+
+.clients {
+  margin: 80px 7.22vw 94px;
+  max-width: 1120px;
+}
+
+@media screen and (max-width: 1439px) {
+  .clients{
+    margin-left: 7.22vw;
+    margin-right: 7.22vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .clients {
+    margin: 29.87px 40px 26px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .clients {
+    margin: 16.46px 16px;
+  }
+}
