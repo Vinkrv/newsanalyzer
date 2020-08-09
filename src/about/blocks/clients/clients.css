@@ -6,6 +6,13 @@
   max-width: 1120px;
 }
 
+@media screen and (min-width: 1440px) {
+  .clients {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media screen and (max-width: 1439px) {
   .clients{
     margin-left: 7.22vw;

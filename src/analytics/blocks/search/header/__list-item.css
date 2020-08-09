@@ -1,12 +1,9 @@
 .header__list-item {
     display: inline;
-    padding-bottom: 26px;
-    list-style: none;
 }
 
-.header__list-item:first-of-type {
-    border-bottom: 3px solid white;
-    margin-right: 34px;
+.header__list-item:last-of-type {
+    margin-left: 34px;
 }
 
 
@@ -21,7 +18,7 @@
         padding-bottom: 16px;
     }
 
-    .header__list-item:first-of-type {
-        margin-right: 11px;
+    .header__list-item:last-of-type {
+        margin-left: 11px;
     }
 }

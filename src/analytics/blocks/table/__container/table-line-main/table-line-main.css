@@ -1,0 +1,14 @@
+@import url("./table__date.css");
+@import url("./table__mentions.css");
+
+.table-line-main {
+  display: flex;
+  box-shadow: inset 0px -1px 0px #1A1B22;
+  padding-bottom: 16px;
+}
+
+@media screen and (max-width: 320px) {
+  .table-line-main {
+    margin-bottom: 18px;
+  }
+}

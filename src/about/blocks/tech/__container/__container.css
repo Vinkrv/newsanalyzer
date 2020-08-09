@@ -11,6 +11,13 @@
   justify-content: space-between;
 }
 
+@media screen and (min-width: 1440px) {
+  .tech__container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media screen and (max-width: 864px) {
   .tech__container {
     flex-direction: column;

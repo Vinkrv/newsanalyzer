@@ -1,0 +1,10 @@
+.table__mentions {
+  color: #B6BCBF;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 26px;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}

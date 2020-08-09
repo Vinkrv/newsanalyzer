@@ -1,0 +1,34 @@
+@import url("./__list-item.css");
+@import url("./__link.css");
+
+.footer__links{
+  padding: 0px;
+  width: 406px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__links {
+    width: 360px;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .footer__links {
+    flex-direction: column;
+    width: 184px;
+    margin-right: 10vw;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .footer__links {
+    margin-right: auto;
+  }
+}
+
+
+
+

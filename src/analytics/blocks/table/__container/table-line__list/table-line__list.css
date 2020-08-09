@@ -1,0 +1,17 @@
+@import url("./table-line__item.css");
+
+.table-line__list {
+  padding-left: 104px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.table-line__list:last-of-type {
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 320px) {
+  .table-line__list{
+    display: none;
+  }
+}
