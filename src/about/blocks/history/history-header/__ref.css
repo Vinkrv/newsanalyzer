@@ -1,0 +1,24 @@
+.history-header__ref {
+  color: #1A1B22;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  transition: opacity 0.4s;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.history-header__ref:hover {
+  opacity: 0.6;
+}
+
+.history-header__ref_active{
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 580px) {
+.history-header__ref  {
+  display: none;
+}
+}

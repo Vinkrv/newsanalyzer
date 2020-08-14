@@ -20,6 +20,7 @@ module.exports = {
     rules: [
       {
         test: /\.css$/i,
+        sideEffects: true,
         use: [(isDev ? 'style-loader' : {
           loader: MiniCssExtractPlugin.loader,
           options: {
@@ -50,36 +51,11 @@ module.exports = {
         }
       },
       {
-        test: /\.(png|jpe?g|gif|svg|webp)$/i,
+        test: /\.(png|jpg|gif|ico|svg)$/i,
         use: [
-          {
-          loader: 'file-loader',
-          options: {
-            name: './images/[name].[ext]',
-            esModule: false
-          }
-          },
+          'file-loader?name=./images/[name].[ext]',
           {
             loader: 'image-webpack-loader',
-            options: {
-              mozjpeg: {
-                progressive: true,
-                quality: 100
-              },
-              optipng: {
-                enabled: false,
-              },
-              pngquant: {
-                quality: [0.99, 0.99],
-                speed: 1
-              },
-              gifsicle: {
-                interlaced: false,
-              },
-              webp: {
-                enabled: false
-              }
-            }
           }
         ]
       }

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="shortcut icon" type="image/png" href="<%=require('./images/favicon.png')%>" />
+  <link rel="shortcut icon" type="image/png" href="<%=require('./images/favicon.png').default%>" />
   <meta name="author" content="Иван Винокуров">
   <meta name="description" content="NewsAnalyzer - сервис для поиска и анализа происходящих в мире событий">
   <meta name="keywords" content="HTML5, CSS, Java Script, Webpack, Яндекс.Практикум">
@@ -95,11 +95,11 @@
 
       <ul class="footer__column-links">
         <li class="footer__link-item"><a href="https://github.com/Vinkrv" class="footer__column-link"
-            target="_blank"><img src="<%=require('./images/github.svg')%>" class="footer__social-icons"
+            target="_blank"><img src="<%=require('./images/github.svg').default%>" class="footer__social-icons"
               alt="ссылка на гитхаб"></a></li>
         <li class="footer__link-item">
           <a href="https://www.facebook.com/profile.php?id=100008564050321" class="footer__column-link" target="_blank">
-            <img src="<%=require('./images/fb.svg')%>" class="footer__social-icons" alt=“facebook”></a>
+            <img src="<%=require('./images/fb.svg').default%>" class="footer__social-icons" alt=“facebook”></a>
         </li>
       </ul>
     </footer>

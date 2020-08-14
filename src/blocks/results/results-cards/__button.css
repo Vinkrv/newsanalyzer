@@ -19,9 +19,10 @@
 }
 
 .results-cards__button:hover {
-    background-color: #E8EAEB;
+    /* background-color: #E8EAEB; */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .results-cards__button:active {
-    background-color: #B6BCBF;
+    background-color: #E8EAEB;
 }

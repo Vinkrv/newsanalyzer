@@ -5,5 +5,7 @@
 @import url(../about/blocks/clients/clients.css);
 @import url(../about/blocks/tech/tech.css);
 @import url(../about/blocks/author/author.css);
+@import url(../../node_modules/swiper/swiper-bundle.css);
+@import url(../about/blocks/history/history.css);
 @import url(../about/blocks/footer/footer.css);
 

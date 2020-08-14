@@ -1,5 +1,5 @@
 .header__ref {
-    color: #1A1B22;
+    color: #B6BCBF;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     text-decoration: none;
     transition: 0.4s;
@@ -11,10 +11,6 @@
 
 .header__ref:hover {
     color: #1A1B22;
-}
-
-.header__ref_active{
-    color: #B6BCBF;
 }
 
 @media screen and (max-width: 425px) {
