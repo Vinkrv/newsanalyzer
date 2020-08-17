@@ -7,20 +7,6 @@
     position: relative;
 }
 
-@media screen and (max-width: 768px) {
-  .results-card__image  {
-    height: 19.53vw;
-    width: 29.16vw;
-  }
-}
-
-@media screen and (max-width: 643px) {
-  .results-card__image  {
-    height: 43.34vw;
-    width: 62.21vw;
-  }
-}
-
 @media screen and (max-width: 320px) {
   .results-card__image  {
     height: 196px;
