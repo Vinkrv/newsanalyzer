@@ -1,0 +1,19 @@
+@import url(./swiper-slide/swiper-slide.css);
+
+.swiper-container {
+  margin-top: 54px;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+  .swiper-container {
+    margin-top: 22px;
+  }
+}
+
+@media screen and (max-width: 369px) {
+  .swiper-container {
+    margin-top: 6px;
+  }
+}

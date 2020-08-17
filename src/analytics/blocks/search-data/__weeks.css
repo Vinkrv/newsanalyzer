@@ -1,0 +1,14 @@
+.search-data__weeks {
+  color: #1A1B22;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  margin-top: 0px;
+  margin-bottom: 4px;
+}
+
+.search-data__bold {
+  font-weight: bold;
+}

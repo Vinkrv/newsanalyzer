@@ -1,0 +1,62 @@
+/* roboto-slab-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: local(''),
+       url('./fonts/roboto-slab-v12-latin_cyrillic-regular.woff2') format('woff2'), 
+       url('./fonts/roboto-slab-v12-latin_cyrillic-regular.woff') format('woff'); 
+}
+/* roboto-slab-500 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 500;
+  font-display: fallback;
+  src: local(''),
+       url('./fonts/roboto-slab-v12-latin_cyrillic-500.woff2') format('woff2'), 
+       url('./fonts/roboto-slab-v12-latin_cyrillic-500.woff') format('woff'); 
+}
+/* roboto-slab-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  font-display: fallback;
+  src: local(''),
+       url('./fonts/roboto-slab-v12-latin_cyrillic-700.woff2') format('woff2'), 
+       url('./fonts/roboto-slab-v12-latin_cyrillic-700.woff') format('woff'); 
+}
+
+/* roboto-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-display: fallback;
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('./fonts/roboto-v20-latin_cyrillic-regular.woff2') format('woff2'), 
+       url('./fonts/roboto-v20-latin_cyrillic-regular.woff') format('woff'); 
+}
+/* roboto-500 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: fallback;
+  src: local('Roboto Medium'), local('Roboto-Medium'),
+       url('./fonts/roboto-v20-latin_cyrillic-500.woff2') format('woff2'), 
+       url('./fonts/roboto-v20-latin_cyrillic-500.woff') format('woff'); 
+}
+
+/* source-sans-pro-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
+       url('./fonts/source-sans-pro-v13-latin_cyrillic-regular.woff2') format('woff2'), 
+       url('./fonts/source-sans-pro-v13-latin_cyrillic-regular.woff') format('woff'); 
+}

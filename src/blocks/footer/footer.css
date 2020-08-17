@@ -1,0 +1,32 @@
+@import url("./__copyright.css");
+@import url("./__links/__links.css");
+@import url("./__column-links/__column-links.css");
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  max-width: 1232px;
+  margin: 30px auto 28px;
+}
+
+@media screen and (max-width: 1439px) {
+  .footer {
+    margin-right: 7.22vw;
+    margin-left: 7.22vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-wrap: wrap;
+    margin: 0px 5.2vw;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .footer {
+    align-items: flex-start;
+  }
+}

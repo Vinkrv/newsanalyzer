@@ -1,0 +1,25 @@
+.history-header__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 46px;
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 768px) {
+.history-header__title {
+  font-size: 30px;
+  line-height: 34px;
+  text-align: start;
+  max-width: 336px;
+}
+}
+
+@media screen and (max-width: 369px) {
+  .history-header__title {
+    width: 160px;
+  }
+  }
+

@@ -1,0 +1,31 @@
+.table__title {
+  color: #1A1B22;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 30px;
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+  max-width: 1232px;
+  margin: 0px auto 48px
+}
+
+@media screen and (max-width: 1439px) {
+  .table__title{
+    margin-left: 7.22vw;
+    margin-right: 7.22vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .table__title{
+    margin-left: 5.21vw;
+    margin-right: 5.21vw;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .table__title{
+    font-size: 26px;
+    margin: 0px 16px 16px;
+  }
+}

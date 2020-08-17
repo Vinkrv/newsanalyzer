@@ -1,0 +1,40 @@
+@import url(./history-card__date.css);
+@import url(./history-card__email.css);
+@import url(./history-card__image.css);
+@import url(./history-card__info.css);
+@import url(./history-card__name.css);
+@import url(./history-card__text.css);
+
+.swiper-slide{
+  background-color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+  margin-bottom: 48px;
+  margin-top: 10px;
+  height: 288px;
+  width: 400px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.swiper-slide:hover {
+box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-slide {
+    height: 242px;
+    width: 336px;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+}
+
+@media screen and (max-width: 369px) {
+  .swiper-slide {
+    height: 264px;
+    width: 288px;
+    margin-bottom: 40px;
+  }
+}

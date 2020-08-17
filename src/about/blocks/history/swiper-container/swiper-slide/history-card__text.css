@@ -1,0 +1,18 @@
+.history-card__text {
+  margin-top: 16px;
+  margin-left: 24px;
+  margin-right: 24px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  color: #1A1B22;
+}
+
+@media screen and (max-width: 369px) {
+  .history-card__text {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
