@@ -25,5 +25,3 @@ GhApi.getCommits()
   swiperLoad ();
   })
   .catch(err => console.log(err));
-
-
