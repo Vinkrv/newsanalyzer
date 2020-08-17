@@ -1,0 +1,26 @@
+@import url("./__form-input.css");
+@import url("./__button.css");
+
+.search__form {
+    width: 608px;
+    min-height: 64px;
+    margin: 0px auto 0px ;
+    padding-bottom: 80px;
+    position: relative;
+}
+
+@media screen and (max-width: 768px) {
+    .search__form {
+        width: 452px;
+        min-height: 56px;
+        padding-bottom: 48px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .search__form  {
+        width: 288px;
+        min-height: 128px;
+        padding-bottom: 32px;
+    }
+}

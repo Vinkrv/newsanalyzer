@@ -1,0 +1,12 @@
+.results-negative__title {
+    color: #1A1B22;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin: 24px auto 16px;
+    max-width: 356px;
+    text-align: center;
+}

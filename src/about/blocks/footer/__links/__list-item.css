@@ -1,0 +1,10 @@
+.footer__list-item {
+  list-style: none;
+  display: inline;
+}
+
+@media screen and (max-width: 485px) {
+  .footer__list-item {
+    display: list-item;
+  }
+}

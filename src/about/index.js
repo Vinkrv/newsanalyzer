@@ -1,5 +1,6 @@
 import '../pages/about.css';
 import './blocks/swiper/swiper.js';
+
 import {swiperLoad} from './blocks/swiper/swiper.js';
 
 import '../js/constants.js';
@@ -59,6 +60,7 @@ GhApi.getCommits()
 // console.log(document.querySelector('.history-card__image').src);
 
 // console.log( cmts[0].commit.author.name );
+
 
 
 

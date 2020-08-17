@@ -1,0 +1,26 @@
+@import url(./__title.css);
+@import url(./__ref.css);
+
+.history-header {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1232px;
+  margin-left: 6.5vw;
+  margin-right: 6.5vw;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+.history-header {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+}
+
+@media screen and (max-width: 320px) {
+.history-header {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+}

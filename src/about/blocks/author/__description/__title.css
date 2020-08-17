@@ -1,0 +1,19 @@
+.clients__title {
+  color: #1A1B22;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 46px;
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+  margin-top: 51px;
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .clients__title {
+    margin-top: 0px;
+    margin-bottom: 16px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+}

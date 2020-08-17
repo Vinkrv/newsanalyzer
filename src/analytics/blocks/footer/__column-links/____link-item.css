@@ -1,0 +1,8 @@
+.footer__link-item {
+  list-style: none;
+  display: inline;
+}
+
+.footer__link-item:last-of-type {
+  margin-left: 24px;
+}

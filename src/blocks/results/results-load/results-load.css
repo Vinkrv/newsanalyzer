@@ -1,0 +1,5 @@
+@import url("./__preloader.css");
+
+.results-load {
+    display: none;
+}

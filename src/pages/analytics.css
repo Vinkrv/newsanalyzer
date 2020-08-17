@@ -1,0 +1,7 @@
+@import url(../vendor/normalize.css);
+@import url(./page.css);
+@import url(../vendor/fonts.css);
+@import url(../analytics/blocks/search/search.css);
+@import url(../analytics/blocks/search-data/search-data.css);
+@import url(../analytics/blocks/table/table.css);
+@import url(../analytics/blocks/footer/footer.css);

@@ -1,11 +1,15 @@
 import Swiper, { Navigation, Pagination } from 'swiper';
 
+
 export {swiperLoad};
+
 Swiper.use([Navigation, Pagination]);
 
 import './swiper.css';
 
+
 function swiperLoad () {
+
 const swiper = new Swiper('.swiper-container', {
   // Optional parameters
   slidesPerView: 'auto',
@@ -39,5 +43,6 @@ const swiper = new Swiper('.swiper-container', {
     prevEl: '.swiper-button-prev',
   },
 });
+
 return swiper;
 }

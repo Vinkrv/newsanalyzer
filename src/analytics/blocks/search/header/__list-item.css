@@ -1,0 +1,24 @@
+.header__list-item {
+    display: inline;
+}
+
+.header__list-item:last-of-type {
+    margin-left: 34px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .header__list-item {
+        padding-bottom: 18px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .header__list-item {
+        padding-bottom: 16px;
+    }
+
+    .header__list-item:last-of-type {
+        margin-left: 11px;
+    }
+}

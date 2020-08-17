@@ -1,0 +1,40 @@
+.table-line-chart {
+  background: #2F71E5;
+  color: #FFF;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  padding-left: 6px;
+}
+
+.table-line-chart__1 {
+  width: calc((100% - 104px) * 0.15);
+}
+
+.table-line-chart__2 {
+  width: calc((100% - 104px) * 0.18);
+}
+
+.table-line-chart__3 {
+  width: calc((100% - 104px) * 0.11);
+}
+
+.table-line-chart__4 {
+  width: calc((100% - 104px) * 0.39);
+}
+
+.table-line-chart__5 {
+  width: calc((100% - 104px) * 0.45);
+}
+
+.table-line-chart__6 {
+  width: calc((100% - 104px) * 0.73);
+}
+
+.table-line-chart__7 {
+  width: calc((100% - 104px) * 0.34);
+}

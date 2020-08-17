@@ -1,0 +1,14 @@
+@import url("../header/__title.css");
+@import url("../header/__ref.css");
+@import url("../header/__list.css");
+@import url("../header/__list-item.css");
+
+.header {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.2);
+    margin-left: auto;
+    margin-right: auto;
+}
