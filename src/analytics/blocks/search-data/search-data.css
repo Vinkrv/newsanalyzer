@@ -1,0 +1,28 @@
+@import url("./breadcrumbs/breadcrumbs.css");
+@import url("./__title.css");
+@import url("./__weeks.css");
+@import url("./__titles.css");
+
+.search-data {
+  margin: 40px auto 80px;
+  max-width: 1120px;
+}
+
+@media screen and (max-width: 1439px) {
+  .search-data{
+    margin-left: 7.22vw;
+    margin-right: 7.22vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .search-data{
+    margin: 32px 5.21vw 40px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .search-data{
+    margin: 16px 16px 24px;
+  }
+}

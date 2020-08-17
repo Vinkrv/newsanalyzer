@@ -1,0 +1,27 @@
+.header__list-item {
+    display: inline;
+    padding-bottom: 26px;
+    list-style: none;
+}
+
+.header__list-item:first-of-type {
+    border-bottom: 3px solid white;
+    margin-right: 34px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .header__list-item {
+        padding-bottom: 18px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .header__list-item {
+        padding-bottom: 16px;
+    }
+
+    .header__list-item:first-of-type {
+        margin-right: 11px;
+    }
+}

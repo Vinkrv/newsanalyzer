@@ -1,0 +1,38 @@
+@import url("./results-card/results-card.css");
+
+.results-cards__container {
+    margin: 64px 6.5vw 80px;
+    max-width: 1232px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(27.77%, 1fr));
+    grid-gap: 16px 16px;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1441px) {
+    .results-cards__container {
+        margin: 64px 7.1vh 80px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+  .results-cards__container  {
+    margin: 32px 40px 32px;
+    grid-gap: 8px 8px;
+  }
+}
+
+@media screen and (max-width: 643px) {
+  .results-cards__container  {
+    margin: 36.85px 18.89vw 12.68px;
+    grid-gap: 7.97px 7.97px;
+    grid-template-columns: repeat(auto-fill, minmax(62.21%, 1fr));
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .results-cards__container  {
+    margin: 35.85px 16px 12.68px;
+    grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
+  }
+}

@@ -1,0 +1,41 @@
+@import url("./header/header.css");
+@import url("./__title.css");
+@import url("./__subtitle.css");
+@import url("./__form/__form.css");
+
+.search {
+    background-image: url(../../images/georgia-de-lotz--UsJoNxLaNo-unsplash.png);
+}
+
+@media screen and (min-width: 1441px) {
+    .search {
+        background-size: 100% auto;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .search {
+        background-size: auto auto;
+        background-position: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .search {
+        background-image: url(../../images/georgia-de-lotz--UsJoNxLaNo-unsplash-ipad.png);
+        background-position: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .search {
+        background-size: auto 100% ;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .search {
+        background-image: url(../../images/georgia-de-lotz--UsJoNxLaNo-unsplash-iphone.png);
+        background-size: 100% auto;
+    }
+}

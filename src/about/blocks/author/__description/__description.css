@@ -1,0 +1,25 @@
+@import url("./__title.css");
+@import url("./__text.css");
+
+.author__description {
+  max-width: 600px;
+}
+
+@media screen and (max-width: 1439px) {
+  .author__description {
+    margin-left: 3.88%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .author__description {
+    margin-left: 4.16%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .author__description {
+    margin-left: 0px;
+    margin-top: 24px;
+  }
+}

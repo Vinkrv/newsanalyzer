@@ -1,0 +1,11 @@
+.results-card__source {
+    margin-bottom: 0px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+    color: #B6BCBF;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;  
+}

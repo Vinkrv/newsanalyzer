@@ -1,0 +1,17 @@
+@import url("./table-line-date.css");
+@import url("./table-line-chart.css");
+
+.table-line {
+  display: flex;
+  margin-bottom: 56px;
+}
+
+.table-line:last-of-type {
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 320px) {
+  .table-line {
+    margin-bottom: 24px;
+  }
+}

@@ -1,0 +1,15 @@
+.breadcrumb-link {
+  list-style: none;
+  text-decoration: none;
+  color: #1A1B22;
+  transition: 0.4s;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.breadcrumb-link:hover {
+  color: #B6BCBF;;
+}

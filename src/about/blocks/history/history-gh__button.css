@@ -1,0 +1,49 @@
+.history-gh__button {
+  display: none;
+}
+
+@media screen and (max-width: 580px) {
+  .history-gh__button  {
+    display: block;
+  }
+  }
+
+.history-button__ref {
+  color: #1A1B22;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.history-gh__button  {
+  margin-top: 24px;
+  width: 288px;
+  height: 64px;
+  border: 1px solid #1A1B22;
+  border-radius: 50px 50px 50px 50px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: #F5F6F7;
+  color:#1A1B22;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  transition: 0.4s;
+  outline: none;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.history-gh__button:hover {
+  /* background-color: #E8EAEB; */
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.history-gh__button:active {
+  background-color: #E8EAEB;
+}

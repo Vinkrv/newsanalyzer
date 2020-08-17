@@ -1,0 +1,20 @@
+.header__list {
+    margin: 30px 101px 26px auto;
+    margin-right: 101px;
+    padding: 0%;
+}
+
+@media screen and (max-width: 768px) {
+    .header__list {
+        margin: 22px 42px 18px auto;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .header__list {
+        margin: 16px 14px 16px auto;
+    }
+}
+
+
+
