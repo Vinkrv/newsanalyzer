@@ -18,17 +18,7 @@ class CommitCard {
 
 
   create() {
-    // const cardOne = `
-    // <div class="place-card">
-    // <div class="place-card__image">
-    //   <button class="place-card__delete-icon"></button>
-    // </div>
-    // <div class="place-card__description">
-    //   <h3 class="place-card__name"></h3>
-    //   <button class="place-card__like-icon"></button>
-    // </div>
-    // </div>
-    // `;
+
     const cardOne = `
     <div class="swiper-slide">
     <p class="history-card__date"></p>
@@ -74,11 +64,11 @@ class NewsCardList {
 
 class CommitCardList {
 
-  constructor(container, renderingCallback) {
+  constructor(container, renderingCallback , dateFunc) {
 
       this.container = container;
       this.renderingCallback = renderingCallback;
-
+      this.dateFunc = dateFunc;
   }
 
   //addCard для добавления карточки в список, принимает на вход экземпляр карточки;
@@ -92,7 +82,7 @@ class CommitCardList {
   //render для отрисовки карточек при загрузке страницы.
   render(initial) {
       initial.forEach(card => {
-          this.addCard(card.commit.committer.date , card.committer.avatar_url , card.commit.committer.name , card.commit.committer.email , card.commit.message);
+          this.addCard(this.dateFunc(card.commit.committer.date) , card.committer.avatar_url , card.commit.committer.name , card.commit.committer.email , card.commit.message);
         })
   }
 
