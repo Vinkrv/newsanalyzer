@@ -11,6 +11,13 @@
     align-items: center;
 }
 
+@media screen and (min-width: 1441px) {
+  .results-header  {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .results-header {
     margin-left: 40px;

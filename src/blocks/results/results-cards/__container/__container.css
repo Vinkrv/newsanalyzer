@@ -2,7 +2,6 @@
 
 .results-cards__container {
     margin: 64px 6.5vw 80px;
-    max-width: 1232px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(27.77%, 1fr));
     grid-gap: 16px 16px;
@@ -12,7 +11,14 @@
 @media screen and (min-width: 1441px) {
     .results-cards__container {
         margin: 64px 7.1vh 80px;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     }
+}
+
+@media screen and (max-width: 1440px) {
+  .results-cards__container {
+      max-width: 1232px;
+  }
 }
 
 @media screen and (max-width: 768px) {

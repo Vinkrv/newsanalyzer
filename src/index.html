@@ -26,9 +26,8 @@
       <h1 class="search__title">Что в мире творится?</h1>
       <p class="search__subtitle">Введите в поиске любую тему и узнайте, насколько
         популярной она была в новостях за прошедшую неделю.</p>
-      <form class="search__form" name="new" novalidate>
-        <input type="text" name="search-input" placeholder="Введите тему новости" class="search__form-input"
-          minlength="2" maxlength="30" required>
+      <form class="search__form">
+        <input type="text" placeholder="Введите тему новости" class="search__form-input" minlength="1" required>
         <button class="search__button">Искать</button>
       </form>
     </div>
@@ -49,7 +48,7 @@
           <a href="./analytics.html" class="results-header__ref">Посмотреть аналитику &#8250;</a>
         </div>
         <div class="results-cards__container">
-          <div class="results-card">
+          <!-- <div class="results-card">
             <img src="<%=require('./images/test.png').default%>" class="results-card__image" alt="иллюистрация новости">
             <div class="results-card__description">
               <p class="results-card__date">2 августа, 2019</p>
@@ -81,7 +80,7 @@
                 к природе.</p>
               <p class="results-card__source">Лента.ру</p>
             </div>
-          </div>
+          </div> -->
         </div>
         <button class="results-cards__button">Показать еще</button>
       </div>

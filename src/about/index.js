@@ -18,7 +18,6 @@ const GhApi = new GithubApi(GITURL);
 
 GhApi.getCommits()
   .then(res => {
-
   let GhStorage = new DataStorage('ghCommits' , res);
   GhStorage.setData();
   commitsList.render(GhStorage.getData());
