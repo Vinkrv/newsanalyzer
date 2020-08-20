@@ -9,6 +9,8 @@
   text-transform: uppercase;
   width: 58px;
   margin-right: 48px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 @media screen and (max-width: 320px) {

@@ -11,7 +11,7 @@
 @media screen and (min-width: 1441px) {
     .results-cards__container {
         margin: 64px 7.1vh 80px;
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(27.77%, 1fr));
     }
 }
 

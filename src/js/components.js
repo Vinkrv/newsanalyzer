@@ -1,7 +1,6 @@
-export {CommitCard , CommitCardList , SearchInput , NewsCard , NewsCardList}
+export {CommitCard , CommitCardList , SearchInput , NewsCard , NewsCardList, Statistics}
 
 //Класс карточки новости
-
 class NewsCard {
   constructor(image, date,  title, text, source , link) {
     this.image = image;
@@ -50,25 +49,13 @@ class NewsCard {
     this.card = newCard;
     this.cardPic = this.card.querySelector('.results-card__image');
     cardImage.src = this.image;
-    // cardImage.onerror = function () {
-    //  cardImage.setAttribute('display' , 'none');
-    // }
-    // console.log(cardImage.src);
-    // if (cardImage.src== 'null') {
-    //   cardImage.src= '';
-    //   cardImage.setAttribute('display' , 'none');
-    // };
+    if (cardImage.src.includes(null)) {
+      cardImage.src= '';
+    };
 
-    // cardImage.closest('.results-card').addEventListener('click', () => {
-    //   window.open(this.link);
-    // });
     this.addListener();
     return element.firstElementChild;
   };
-
-  removeListener() {
-    this.link.removeEventListener('click', this.linkOpen);
-  }
 }
 
 //Класс карточки коммита
@@ -81,9 +68,7 @@ class CommitCard {
     this.message = message;
   }
 
-
   create() {
-
     const cardOne = `
     <div class="swiper-slide">
     <p class="history-card__date"></p>
@@ -98,7 +83,6 @@ class CommitCard {
     <p class="history-card__text"></p>
   </div>
           `;
-
 
     const element = document.createElement('div');
     element.insertAdjacentHTML('afterbegin', cardOne);
@@ -141,21 +125,15 @@ class NewsCardList {
 
   //render для отрисовки карточек
   render(initial) {
-
     let count = this.counter();
     if (initial.length === 0) {
       this.container.closest('.results').querySelector('.results-negative').setAttribute('style' , 'display: block');
       this.container.closest('.results').setAttribute('style' , 'display: block');
       this.container.closest('.results-cards').setAttribute('style' , 'display: none');
     } else {
-
       for (let i = count; i < count + 3; i += 1) {
         this.addCard(initial[i].urlToImage , this.dateFunc(initial[i].publishedAt) , initial[i].title , initial[i].description , initial[i].source.name , initial[i].url);
-        console.log(i)
         };
-        // {initial.forEach(card => {
-        //   this.addCard(card.urlToImage , this.dateFunc(card.publishedAt) , card.title , card.description , card.source.name , card.url);
-        //   });
       this.container.closest('.results').querySelector('.results-negative').setAttribute('style' , 'display: none');
       this.container.closest('.results-cards').setAttribute('style' , 'display: block');
       this.container.closest('.results').setAttribute('style' , 'display: block');}
@@ -191,13 +169,6 @@ class CommitCardList {
 
 };
 
-//Конструктор класса принимает колбэк-функцию, исполняемую при сабмите формы поиска.
-//В колбэк-функции описывается взаимодействие с API, списком карточек и локальным браузерным хранилищем.
-//Полученные от NewsAPI данные должны приводить к обновлению хранилища,
-//а список карточек отображать полученные данные на странице.
-//Кроме этого у класса SearchInput должны быть методы для валидации формы поиска и методы,
-//управляющие работой кнопки сабмита.
-
 class SearchInput {
   constructor(formCallback) {
     this.formCallback = formCallback;
@@ -209,8 +180,23 @@ class SearchInput {
 }
 
 //Класс, отвечающий за логику работы графиков со статистикой на странице аналитики.
-//Конструктор класса получает объект, содержащий текущее состояние локального браузерного хранилища.
 
 class Statistics {
+  constructor(renderCallback) {
+    this.renderCallback  = renderCallback;
+}
+  renderStatistic(arrId) {
+    arrId.forEach(id => {
+      this.renderCallback(id);
+    })
+  }
+
+  titlesCounter(arr , input) {
+    arr.forEach(item => {
+      if (item.title.toLowerCase().includes(input)) {
+       this.renderCallback();
+      }
+    })
+  }
 
 }
