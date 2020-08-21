@@ -125,6 +125,7 @@ class NewsCardList {
 
   //render для отрисовки карточек
   render(initial) {
+
     let count = this.counter();
     if (initial.length === 0) {
       this.container.closest('.results').querySelector('.results-negative').setAttribute('style' , 'display: block');
@@ -132,7 +133,11 @@ class NewsCardList {
       this.container.closest('.results-cards').setAttribute('style' , 'display: none');
     } else {
       for (let i = count; i < count + 3; i += 1) {
+        if (initial[i] == undefined) {
+          this.container.closest('.results-cards').querySelector('.results-cards__button').setAttribute('style' , 'display: none')
+        } else {
         this.addCard(initial[i].urlToImage , this.dateFunc(initial[i].publishedAt) , initial[i].title , initial[i].description , initial[i].source.name , initial[i].url);
+        }
         };
       this.container.closest('.results').querySelector('.results-negative').setAttribute('style' , 'display: none');
       this.container.closest('.results-cards').setAttribute('style' , 'display: block');
