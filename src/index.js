@@ -1,119 +1,62 @@
-// import {Api} from './classes/Api.js';
-// import {Card} from './classes/Card.js';
-// import {CardList} from './classes/CardList.js';
-// import {FormValidator} from './classes/FormValidator.js';
-// import {Popup} from './classes/Popup.js';
-// import {UserInfo} from './classes/UserInfo.js';
 import './pages/index.css';
 
-// (function(){const placesList = document.querySelector('.places-list');
-// const buttonAdd = document.querySelector('.user-info__button');
-// const buttonEdit = document.querySelector('.user-info__edit');
-// const popupClosePlace = document.querySelector('.popup__close_place');
-// const popupCloseProfile = document.querySelector('.popup__close_profile');
-// const popupClosePicture = document.querySelector('.popup__close_picture');
-// const popupName = document.querySelector('.popup__input_type_name');
-// const popupLink = document.querySelector('.popup__input_type_link-url');
-// const popupAddFormProfile = document.querySelector('.popup__form_profile');
-// const userName = document.querySelector('.user-info__name');
-// const userJob = document.querySelector('.user-info__job')
-// const userNamePopup = popupAddFormProfile .querySelector('.popup__input_type_name');
-// const infoPopup = popupAddFormProfile .querySelector('.popup__input_type_info');
-// const popupAddFormPlace = document.querySelector('.popup__form_place');
-// const errorMessages = {
-//   valueMissing: 'Это обязательное поле',
-//   tooShort: 'Должно быть от 2 до 30 символов',
-//   typeMismatch: 'Здесь должна быть ссылка'
-// };
-// const API_URL = NODE_ENV === 'production' ? 'https://praktikum.tk' : 'http://praktikum.tk';
-// const config ={
-//   url: `${API_URL}/cohort11`,
-//   headers: {
-//     authorization: 'f70a6be0-271c-4f60-bd8e-23050a89a937',
-//     'Content-Type': 'application/json'
-//   }
-// };
-// const userInfo = new UserInfo(userName , userJob , userNamePopup , infoPopup);
-// const popupAddFormProfileValid = new FormValidator(popupAddFormProfile , errorMessages);
-// const popupAddFormPlaceValid = new FormValidator(popupAddFormPlace , errorMessages);
-// const picturePopup = new Popup(document.querySelector('.popup_picture'));
-// const addPopup = new Popup(document.querySelector('.popup_place'));
-// const editProfile = new Popup(document.querySelector('.popup_profile'));
-// const api = new Api(config);
+import {inputForm , searchForm, buttonMore , buttonForm , resultList} from './js/constants.js';
+import {formatDate , weekDate , preloader} from './js/utils.js';
+import {NewsApi , DataStorage} from './js/modules.js';
+import {NewsCard , NewsCardList , SearchInput} from './js/components.js';
 
-// function cardsRender (name , link) {
-//   const newcard = new Card(name , link, picturePopup);
-//   return newcard.create();
-// };
+//Функция-счетчик для выдачи карточек по 3 штуки
+let cardCounter = -3;
+function counter () {
+  cardCounter  += 3
+  return cardCounter ;
+}
 
-// const cardList = new CardList(placesList, cardsRender);
+function cardsResultsRender (image, date,  title, text, source , link) {
+  const newResultCard = new NewsCard(image, date,  title, text, source , link);
+  return newResultCard.create();
+};
 
-// api.getInfoUser()
-//   .then(res => {
-//   userInfo.updateUserInfo(res.name , res.about);
-//   document.querySelector('.user-info__photo').setAttribute('style', `background-image: url(${res.avatar})`)
-//   })
-//   .catch(err => console.log(err));
+const cardsList = new NewsCardList(resultList, cardsResultsRender , formatDate , counter);
+let dayFrom = weekDate("from");
+let dayTo = weekDate("to");
 
-// popupAddFormProfile.addEventListener('submit', (e) => {
-//   e.preventDefault();
-//   api.patchInfo({
-//     name: `${userNamePopup.value}`,
-//     about: `${infoPopup.value}`
-//   })
-//   .then(res => {
-//     userInfo.updateUserInfo(res.name , res.about);
-//     editProfile.close();
-//   })
-//   .catch(err => console.log(err));
-// });
+function inputCallback () {
+  let apiNews = new NewsApi(inputForm.value , dayFrom , dayTo);
+  apiNews.getNews()
+  .then(res => {
+    let newsStorage = new DataStorage('news' , res);
+    newsStorage.setData();
+    cardsList.render(newsStorage.getData().articles);
+  })
+  .catch(err => console.log(err))
+  .finally (() => {
+    preloader(false);
+    buttonForm.removeAttribute("disabled");
+    inputForm.removeAttribute("disabled");})
+}
 
-// api.getInitialCards()
-//   .then(res => {
-//   cardList.render(res);
-//   })
-//   .catch(err => console.log(err));
+let inputSearch = new SearchInput(inputCallback);
 
-// //Открытие формы карточки
-// buttonAdd.addEventListener('click', () => {
-//   addPopup.open();
-//   popupAddFormPlaceValid.resetForm();
-//   popupAddFormPlaceValid.cleanError();
-//   popupAddFormPlaceValid.resetButtonForm();
-//   popupAddFormPlaceValid.setEventListeners();
+//Слушатель кнопки "Искать"
+searchForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  buttonForm.setAttribute('disabled' , 'true');
+  inputForm.setAttribute('disabled' , 'true');
+  preloader(true);
+  cardCounter = - 3;
+  document.querySelector('.results-cards__container').innerHTML= '';
+  document.querySelector('.results-cards__container').textContent= '';
+  inputSearch.searchNews();
+  let newsStorage = new DataStorage('input' , inputForm.value);
+  newsStorage.setData();
+  inputForm.value = newsStorage.getData();
+});
 
-// });
+//Слушатель кнопки "Показать ещё"
+buttonMore.addEventListener('click', () => {
+  cardsList.render((JSON.parse(localStorage.getItem('news'))).articles);
+});
 
-// // Открытие формы профиля
-// buttonEdit.addEventListener('click', () => {
-//   editProfile.open();
-//   userInfo.setUserInfo(userName , userJob);
-//   popupAddFormProfileValid.cleanError();
-//   popupAddFormProfileValid.setEventListeners();
-// });
-
-// // Закрытие формы карточки
-// popupClosePlace.addEventListener('click', () => {
-//   addPopup.close();
-// });
-
-// // Закрытие формы профиля
-// popupCloseProfile.addEventListener('click', () => {
-//   editProfile.close();
-// });
-
-// // Закрытие изображения карточки
-// popupClosePicture.addEventListener('click', () => {
-//   picturePopup.close();
-// });
-
-// // Добавление карточки
-// popupAddFormPlace.addEventListener('submit', (event) => {
-//   event.preventDefault();
-//   cardList.addCard(popupName.value , popupLink.value, picturePopup);
-//   popupName.value = '';
-//   popupLink.value = '';
-//   addPopup.close();
-// });
-
-// })();
+cardsList.render((JSON.parse(localStorage.getItem('news'))).articles);
+inputForm.value = JSON.parse(localStorage.getItem('input'));

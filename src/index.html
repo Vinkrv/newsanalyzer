@@ -26,9 +26,8 @@
       <h1 class="search__title">Что в мире творится?</h1>
       <p class="search__subtitle">Введите в поиске любую тему и узнайте, насколько
         популярной она была в новостях за прошедшую неделю.</p>
-      <form class="search__form" name="new" novalidate>
-        <input type="text" name="search-input" placeholder="Введите тему новости" class="search__form-input"
-          minlength="2" maxlength="30" required>
+      <form class="search__form">
+        <input type="text" placeholder="Введите тему новости" class="search__form-input" minlength="1" required>
         <button class="search__button">Искать</button>
       </form>
     </div>
@@ -49,39 +48,6 @@
           <a href="./analytics.html" class="results-header__ref">Посмотреть аналитику &#8250;</a>
         </div>
         <div class="results-cards__container">
-          <div class="results-card">
-            <img src="<%=require('./images/test.png').default%>" class="results-card__image" alt="иллюистрация новости">
-            <div class="results-card__description">
-              <p class="results-card__date">2 августа, 2019</p>
-              <h3 class="results-card__title">Национальное достояние – парки</h3>
-              <p class="results-card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
-                складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться
-                к природе.</p>
-              <p class="results-card__source">Лента.ру</p>
-            </div>
-          </div>
-          <div class="results-card">
-            <img src="<%=require('./images/test.png').default%>" class="results-card__image" alt="иллюистрация новости">
-            <div class="results-card__description">
-              <p class="results-card__date">2 августа, 2019</p>
-              <h3 class="results-card__title">Национальное достояние – парки</h3>
-              <p class="results-card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
-                складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться
-                к природе.</p>
-              <p class="results-card__source">Лента.ру</p>
-            </div>
-          </div>
-          <div class="results-card">
-            <img src="<%=require('./images/test.png').default%>" class="results-card__image" alt="иллюистрация новости">
-            <div class="results-card__description">
-              <p class="results-card__date">2 августа, 2019</p>
-              <h3 class="results-card__title">Национальное достояние – парки</h3>
-              <p class="results-card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
-                складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться
-                к природе.</p>
-              <p class="results-card__source">Лента.ру</p>
-            </div>
-          </div>
         </div>
         <button class="results-cards__button">Показать еще</button>
       </div>
@@ -95,10 +61,8 @@
       </picture>
       <div class="author__description">
         <h3 class="author__title">Об авторе</h3>
-        <p class="author__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы
-          занимаетесь, какими технологиями разработки владеете.</p>
-        <p class="author__text">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем
-          можете помочь потенциальным заказчикам.</p>
+        <p class="author__text">Иван Винокуров, окончил курс Яндекс.Практикум по направлению «Фронтенд-разработчик». Освоены: HTML5, CSS3, Java Script, Git, Webpack.</p>
+        <p class="author__text">В ходе обучения я понял, что любая задача выполнима, нужно лишь приложить соответствующие усилия.</p>
       </div>
     </div>
     <footer class="footer">

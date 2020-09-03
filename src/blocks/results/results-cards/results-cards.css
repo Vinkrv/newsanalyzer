@@ -1,3 +1,7 @@
 @import url("./results-header/results-header.css");
 @import url("./__container/__container.css");
 @import url("./__button.css");
+
+.results-cards {
+  display: none;
+}
